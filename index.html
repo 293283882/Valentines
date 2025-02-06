@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffe6f2;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: #ff3366;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            animation: heartbeat 1s infinite alternate;
+        }
+        @keyframes heartbeat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff3366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #ff6699;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hey Jayda! 💕</h1>
+        <p>Will you be my Valentine? 😊</p>
+        <p>💖 From, Miles Fernandez 💖</p>
+        <div class="heart">❤️</div>
+        <div class="buttons">
+            <button onclick="yes()">Yes! 💖</button>
+            <button onclick="no()">No 😢</button>
+        </div>
+    </div>
+
+    <script>
+        function yes() {
+            alert("Yay! Can't wait to celebrate with you, Jayda! 💕🥰 - Miles Fernandez");
+        }
+
+        function no() {
+            document.querySelector("button[onclick='no()']").style.display = "none";
+            alert("Oops! The 'No' button disappeared! Guess it's a YES! 😆💖");
+        }
+    </script>
+
+</body>
+</html>
